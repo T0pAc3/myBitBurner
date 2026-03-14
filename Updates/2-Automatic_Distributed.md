@@ -51,7 +51,7 @@ auto-scan.js: ["home","n00dles","foodnstuff","sigma-cosmetics","joesguns","hong-
 [home /]> 
 ```
 
-##Automatic_Hacking
+## Automatic_Hacking
 Now that we have a list of targets, I want to go in there and create a script that will hack as many devices as possible. We currently have 2 port opening programs, so we'll call those for every host we encounter. I also included some verbosity with the logging of successful devices we have root over.
 
 **auto_nuker.js**
@@ -85,7 +85,7 @@ auto_nuker.js: ["n00dles","foodnstuff","sigma-cosmetics","joesguns","hong-fang-t
 [home /]> 
 ```
 
-##Automatic_Distribution
+## Automatic_Distribution
 
 Now our goal is to take all of our hacked devices and run as many of the self-hacking script as we can. We did this by copying the self-hacking script to every device, finding how many threads we could run with the limited RAM. And ran the script on each device hacking itself. There were a couple issues as we needed to make sure it was a RAM-less server and that we had a high enough hacking level to hack the system.
 
@@ -123,6 +123,7 @@ export async function main(ns) {
 
 One thing I realized is if you were to add up all of the RAM from these three scripts. It would only result in 7.95 GB of RAM. I realized since it is a one shot script, I could combine all three of them into one code and simply run that and it would stay under my 8 GB of RAM on my home system. Anyways, here is our automatic distributed of our hacking software onto the bitburner network.
 
+**auto_distributer.js**
 ```js
 /** @param {NS} ns */
 
