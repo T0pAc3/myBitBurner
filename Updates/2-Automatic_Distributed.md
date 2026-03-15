@@ -119,7 +119,7 @@ export async function main(ns) {
 }
 ```
 
-##Putting it all together
+## Putting it all together
 
 One thing I realized is if you were to add up all of the RAM from these three scripts. It would only result in 7.95 GB of RAM. I realized since it is a one shot script, I could combine all three of them into one code and simply run that and it would stay under my 8 GB of RAM on my home system. Anyways, here is our automatic distributed of our hacking software onto the bitburner network.
 
